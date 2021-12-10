@@ -1,13 +1,13 @@
 <div class="container">
-<h1>Heros List</h1>
-
-<ul>
-  <li *ngFor="let hero of heroes ; let i = index">
-    {{i+1}} {{hero}}
-  </li>
-
-</ul>
-<button (click)="deleteHero()">Delete a Hero</button>
-
-  <p *ngIf="deletedHero">Deleted Hero : {{deletedHero}}</p>
+  <h1>Heros List</h1>
+  <ul>
+    <li *ngFor="let hero of heroes ; let i = index">
+      {{i+1}} {{hero}}
+    </li>
+  </ul>
+  <button (click)="deleteHero()">Delete a Hero</button>
+  <p class="alert"  *ngIf="deletedHero; else noDelete">Deleted Hero : {{deletedHero}}</p>
+  <ng-template #noDelete>
+    <p class="alert">No deleted yet</p>
+  </ng-template>
 </div>

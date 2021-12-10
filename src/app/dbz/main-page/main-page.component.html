@@ -1,0 +1,19 @@
+<div class="container">
+<div class="title">
+  <h1 class="dragon">DRAGON <span class="ball">BALL Z</span></h1>
+</div>
+<hr>
+<div class="row">
+  <div class="col">
+    <h3>Characters</h3>
+    <hr>
+      <app-characters [characters]="characters"></app-characters>
+  </div>
+  <div class="col">
+    <h3>Add</h3>
+    <hr>
+    <app-form [characters]="characters" (onNewCharacter)="addNewCharacter($event)">
+    </app-form>
+  </div>
+</div>
+</div>

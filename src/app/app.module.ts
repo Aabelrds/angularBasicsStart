@@ -1,20 +1,24 @@
-import { HeroeComponent } from './heroes/heroe/heroes.component';
+import { HeroesModule } from './heroes/heroes.module';
+import { ContadorModule } from './acumulador/acumulador.module';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ContadorComponent } from './acumulador/contador.component';
-import { ListadoComponent } from './heroes/listado/listado.component'
+import { DbzModule } from './dbz/dbz.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent,
-    HeroeComponent,
-    ListadoComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    ContadorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

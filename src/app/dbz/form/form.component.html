@@ -1,0 +1,5 @@
+<form (ngSubmit)="add()">
+  <input type="text" id="" placeholder="Name" name="name" [(ngModel)] ="new.name">
+  <input type="text" name="power" placeholder="Poder" [value]= "new.power" [(ngModel)]="new.power">
+  <button type="submit">Add</button>
+</form>

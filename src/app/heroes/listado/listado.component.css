@@ -1,0 +1,14 @@
+.container{
+  width: 180px;
+}
+ul{
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.alert{
+  color: darkred;
+  font-weight: 600;
+  font-size: large;
+}

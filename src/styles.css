@@ -37,3 +37,20 @@ button:focus{
 
   outline: none;
 }
+
+.row{
+  display: flex;
+
+}
+
+.col{
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+input{
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
